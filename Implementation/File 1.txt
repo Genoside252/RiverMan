@@ -1,2 +1,8 @@
 Write some code
+
+Nav bar added
+Home button added
+Subscription button added
+Testing passed
+
 Footer added
