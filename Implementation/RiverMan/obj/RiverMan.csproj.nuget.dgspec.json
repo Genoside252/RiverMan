@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marwo\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj": {}
+    "C:\\Users\\James\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marwo\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj": {
+    "C:\\Users\\James\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marwo\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj",
+        "projectUniqueName": "C:\\Users\\James\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj",
         "projectName": "RiverMan",
-        "projectPath": "C:\\Users\\marwo\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj",
-        "packagesPath": "C:\\Users\\marwo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marwo\\Documents\\RiverMan\\Implementation\\RiverMan\\obj\\",
+        "projectPath": "C:\\Users\\James\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj",
+        "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\James\\Documents\\RiverMan\\Implementation\\RiverMan\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\marwo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -30,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "EntityFramework": {
               "target": "Package",
@@ -93,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

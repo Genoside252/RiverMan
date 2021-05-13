@@ -66,6 +66,8 @@ namespace RiverMan
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseAuthentication();
+            
 
             // Seed Data
             DBInitialiser.Initialise(userManager, roleManager, context);
