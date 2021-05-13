@@ -9475,25 +9475,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nick\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\marwo\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nick\\Documents\\GitHub\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj",
+      "projectUniqueName": "C:\\Users\\marwo\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj",
       "projectName": "RiverMan",
-      "projectPath": "C:\\Users\\nick\\Documents\\GitHub\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj",
-      "packagesPath": "C:\\Users\\nick\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nick\\Documents\\GitHub\\RiverMan\\Implementation\\RiverMan\\obj\\",
+      "projectPath": "C:\\Users\\marwo\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj",
+      "packagesPath": "C:\\Users\\marwo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marwo\\Documents\\RiverMan\\Implementation\\RiverMan\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\nick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\marwo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -9506,6 +9504,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -9517,6 +9516,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "EntityFramework": {
             "target": "Package",
@@ -9567,7 +9567,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
