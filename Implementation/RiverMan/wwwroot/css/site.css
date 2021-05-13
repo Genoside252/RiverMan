@@ -61,7 +61,8 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    background-color: #c9c9c9; 
+    background-color: #c9c9c9;
+    
    
 }
 .footer {
@@ -79,7 +80,9 @@ body {
     background-position-x:center;
     background-position-y:35%;
     color: black;
-   
-    
-   
+}
+
+.footerIcon{
+    height: 50px;
+    width: 50px;
 }
