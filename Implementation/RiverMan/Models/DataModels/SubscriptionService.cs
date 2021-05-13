@@ -11,6 +11,7 @@ namespace RiverMan.Models
 
         public string ServiceName { get; set; }
 
+        public int ServiceTypeId { get; set; }
         public virtual ServiceType ServiceType { get; set; }
 
         public string ImageURI { get; set; }

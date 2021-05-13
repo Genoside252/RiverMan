@@ -11,7 +11,6 @@
                 <a class="nav-link text-light"asp-area="" asp-controller="Manage" asp-action="Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
             </li>
             <li>
-
                 <a class="nav-link text-light" asp-area="" asp-controller="Account" asp-action="Logout">Log out</a>
             </li>
         </ul>
@@ -21,10 +20,10 @@ else
 {
 <ul class="nav navbar-nav navbar-right">
     <li class="nav-item">
-        <a class="nav-link text-light" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+        <a class="nav-link text-light" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="Register">Register</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-light" asp-area="" asp-controller="Account" asp-action="Login">Log in</a>
+        <a class="nav-link text-light" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="Login">Log in</a>
     </li>
 </ul>
 }

@@ -46,6 +46,8 @@ namespace RiverMan.Controllers
         // GET: SubscriptionService/Create
         public IActionResult Create()
         {
+            var serviceTypes = _context.ServiceTypes.ToList();
+            ViewData["ServiceTypes"] = new SelectList(serviceTypes, "Id", "Name");
             return View();
         }
 
@@ -54,7 +56,7 @@ namespace RiverMan.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ServiceName,ImageURI")] SubscriptionService subscriptionService)
+        public async Task<IActionResult> Create([Bind("Id,ServiceName,ServiceTypeId,ImageURI")] SubscriptionService subscriptionService)
         {
             if (ModelState.IsValid)
             {

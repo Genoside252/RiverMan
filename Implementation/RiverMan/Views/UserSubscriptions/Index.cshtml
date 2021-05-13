@@ -13,26 +13,27 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.User)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Subscription)
             </th>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subscription.ServiceType.Name)
+            </th>
+            <th>
+
+            </th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.User.Id)
+                @Html.DisplayFor(modelItem => item.Subscription.ServiceName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Subscription.Id)
+                @Html.DisplayFor(modelItem => item.Subscription.ServiceType.Name)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ })
                 @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
             </td>
         </tr>
