@@ -36,17 +36,21 @@
         </nav>
     </header>
 
- 
-   
-    
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
    
 
     <footer class="border-top footer text-muted navbar-dark bg-dark">
         <div class="container">
+
             &copy; 2021 - RiverMan - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+            <a href="https://en-gb.facebook.com/"><img class="footerIcon" src="~/img/facebook (1).png" /></a> @*"Icon made by Pixel perfect from www.flaticon.com"*@
+
+            <a href="https://twitter.com/?lang=en-gb"><img class="footerIcon" src="~/img/twitter (1).png" /></a> @*"Icon made by Pixel perfect from www.flaticon.com"*@
+
+            <a href="https://www.instagram.com/"><img class="footerIcon" src="~/img/instagram.png" /></a> @*"Icon made by Pixel perfect from www.flaticon.com"*@
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
