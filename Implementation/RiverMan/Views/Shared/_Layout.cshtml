@@ -28,6 +28,9 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AddService">Add Service</a>
                         </li>
                     </ul>
+                    <div style="float:right">
+                        @await Html.PartialAsync("_LoginPartial")
+                    </div>
                 </div>
             </div>
         </nav>
