@@ -9,9 +9,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">RiverMan</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img class="rmlogo" src="/img/sailboat.png" />RiverMan</a> @*"Icon made by Pixel perfect from www.flaticon.com"*@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -19,25 +19,38 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="AddService">Add Service</a>
                         </li>
                     </ul>
+                    <div style="float:right">
+                        @await Html.PartialAsync("_LoginPartial")
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+   
+
+    <footer class="border-top footer text-muted navbar-dark bg-dark">
         <div class="container">
+
             &copy; 2021 - RiverMan - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+            <a href="https://en-gb.facebook.com/"><img class="footerIcon" src="~/img/facebook (1).png" /></a> @*"Icon made by Pixel perfect from www.flaticon.com"*@
+
+            <a href="https://twitter.com/?lang=en-gb"><img class="footerIcon" src="~/img/twitter (1).png" /></a> @*"Icon made by Pixel perfect from www.flaticon.com"*@
+
+            <a href="https://www.instagram.com/"><img class="footerIcon" src="~/img/instagram.png" /></a> @*"Icon made by Pixel perfect from www.flaticon.com"*@
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

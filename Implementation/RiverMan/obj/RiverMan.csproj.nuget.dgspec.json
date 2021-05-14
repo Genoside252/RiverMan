@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\james\\OneDrive - University of Wales Trinity Saint David\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj": {}
+    "C:\\Users\\James\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj": {}
   },
   "projects": {
-    "C:\\Users\\james\\OneDrive - University of Wales Trinity Saint David\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj": {
+    "C:\\Users\\James\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\james\\OneDrive - University of Wales Trinity Saint David\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj",
+        "projectUniqueName": "C:\\Users\\James\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj",
         "projectName": "RiverMan",
-        "projectPath": "C:\\Users\\james\\OneDrive - University of Wales Trinity Saint David\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj",
-        "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\james\\OneDrive - University of Wales Trinity Saint David\\Documents\\RiverMan\\Implementation\\RiverMan\\obj\\",
+        "projectPath": "C:\\Users\\James\\Documents\\RiverMan\\Implementation\\RiverMan\\RiverMan.csproj",
+        "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\James\\Documents\\RiverMan\\Implementation\\RiverMan\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "P:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -30,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,7 +37,38 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
