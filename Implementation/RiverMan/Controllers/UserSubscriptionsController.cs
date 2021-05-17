@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RiverMan.DataAccessLayer;
 using RiverMan.Models;
+using System.Security.Claims;
 
 namespace RiverMan.Controllers
 {
@@ -22,7 +23,8 @@ namespace RiverMan.Controllers
         // GET: UserSubscriptions
         public async Task<IActionResult> Index()
         {
-            var riverManContext = _context.UserSubscriptions.Include(u => u.Subscription).Include(u => u.User);
+            var user = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var riverManContext = _context.UserSubscriptions.Include(u => u.Subscription).Include(u => u.User).Where(u => u.UserId == user);
             return View(await riverManContext.ToListAsync());
         }
 
@@ -49,8 +51,10 @@ namespace RiverMan.Controllers
         // GET: UserSubscriptions/Create
         public IActionResult Create()
         {
-            ViewData["SubscriptionId"] = new SelectList(_context.SubscriptionServices, "Id", "Id");
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id");
+            var user = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var userSubscriptions = _context.UserSubscriptions.Where(c => c.UserId == user).Select(c=>c.SubscriptionId).ToList();
+            var userUnsubscribed = _context.SubscriptionServices.Where(c => !userSubscriptions.Contains(c.Id)).ToList();
+            ViewData["Subscription"] = new SelectList(userUnsubscribed, "Id", "ServiceName");
             return View();
         }
 
@@ -63,6 +67,7 @@ namespace RiverMan.Controllers
         {
             if (ModelState.IsValid)
             {
+                userSubscription.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 _context.Add(userSubscription);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

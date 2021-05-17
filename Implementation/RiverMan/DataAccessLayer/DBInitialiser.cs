@@ -95,7 +95,7 @@ namespace RiverMan.DataAccessLayer
         public static bool SeedServiceTypes(RiverManContext context)
         {
             var type = context.ServiceTypes.FirstOrDefault(c => c.Name == "Streaming");
-            if (type != null)
+            if (type == null)
             {
                 ServiceType mediaStreaming = new ServiceType { Name = "Streaming" };
                 context.ServiceTypes.Add(mediaStreaming);
@@ -110,12 +110,12 @@ namespace RiverMan.DataAccessLayer
         public static bool SeedServices(RiverManContext context)
         {
             var type = context.SubscriptionServices.FirstOrDefault(c => c.ServiceName == "Netflix");
-            if (type != null)
+            if (type == null)
             {
                 SubscriptionService netflix = new SubscriptionService
                 {
                     ServiceName = "Netflix",
-                    ServiceType = streamingServiceType
+                    ServiceTypeId = streamingServiceType.Id
                 };
                 context.SubscriptionServices.Add(netflix);
                 return context.SaveChanges() > 0;
